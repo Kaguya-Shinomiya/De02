@@ -173,5 +173,20 @@ namespace De02
         {
             this.Close();   
         }
+        private void btTim_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in lvSanpham.Items)
+            {
+                if (item.SubItems[1].ToString()?.IndexOf(txtTim.Text, StringComparison.OrdinalIgnoreCase) == -1)
+                {
+                    item.Remove();
+                }
+            }
+        }
+
+        private void txtTim_TextChanged(object sender, EventArgs e)
+        {
+            DATA();
+        }
     }
 }
