@@ -1,4 +1,4 @@
-﻿namespace De02
+namespace De02
 {
     partial class Form1
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.txtTim = new System.Windows.Forms.TextBox();
             this.btTim = new System.Windows.Forms.Button();
             this.lvSanpham = new System.Windows.Forms.ListView();
@@ -59,6 +59,7 @@
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(100, 20);
             this.txtTim.TabIndex = 0;
+            this.txtTim.TextChanged += new System.EventHandler(this.txtTim_TextChanged);
             // 
             // btTim
             // 
@@ -68,6 +69,7 @@
             this.btTim.TabIndex = 1;
             this.btTim.Text = "Tìm";
             this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // lvSanpham
             // 
@@ -79,7 +81,7 @@
             this.lvSanpham.GridLines = true;
             this.lvSanpham.HideSelection = false;
             this.lvSanpham.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.lvSanpham.Location = new System.Drawing.Point(30, 143);
             this.lvSanpham.Name = "lvSanpham";
             this.lvSanpham.Size = new System.Drawing.Size(511, 206);
